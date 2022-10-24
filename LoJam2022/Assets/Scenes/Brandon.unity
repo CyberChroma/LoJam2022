@@ -385,11 +385,6 @@ Transform:
   m_Father: {fileID: 993892731}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -50, y: 30, z: 0}
---- !u!4 &961739753 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8433938602219363299, guid: c5850155988beee45b289c91c9028270, type: 3}
-  m_PrefabInstance: {fileID: 8433938602910523402}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &993892730
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,10 +719,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8433938601987508307, guid: c5850155988beee45b289c91c9028270, type: 3}
-      propertyPath: m_Radius
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8433938601987508316, guid: c5850155988beee45b289c91c9028270, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -772,28 +763,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8433938601987508317, guid: c5850155988beee45b289c91c9028270, type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 961739753}
-    - target: {fileID: 8433938601987508317, guid: c5850155988beee45b289c91c9028270, type: 3}
-      propertyPath: speed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8433938601987508317, guid: c5850155988beee45b289c91c9028270, type: 3}
-      propertyPath: smoothing
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 8433938601987508319, guid: c5850155988beee45b289c91c9028270, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8433938602219363296, guid: c5850155988beee45b289c91c9028270, type: 3}
-      propertyPath: turnSpeedX
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8433938602219363296, guid: c5850155988beee45b289c91c9028270, type: 3}
-      propertyPath: turnSpeedY
+    - target: {fileID: 8433938602219363298, guid: c5850155988beee45b289c91c9028270, type: 3}
+      propertyPath: field of view
       value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []

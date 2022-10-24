@@ -46,7 +46,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &8433938601987508306
 Rigidbody:
@@ -76,7 +76,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24142e4436ecfad4aba065c8790c500b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  smoothing: 10
+  speed: 3
+  dashSpeed: 25
+  dashDelay: 0.75
+  cam: {fileID: 8433938602219363299}
 --- !u!1 &8433938602219363311
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,5 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83da604779217e54e8524f1d45176813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnSpeedX: 10
-  turnSpeedY: 10
+  turnHorizontalSpeed: 4
+  turnVerticalSpeed: 3
+  minXTurn: -85
+  maxXTurn: 45
