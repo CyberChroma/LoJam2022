@@ -11,6 +11,7 @@ public enum BloodType
 public class CellTypeManager : MonoBehaviour
 {
     public BloodType bloodType;
+    public bool converting = false;
 
     void Start()
     {
@@ -24,6 +25,24 @@ public class CellTypeManager : MonoBehaviour
 
     public void BloodToCancer()
     {
+        StopAllCoroutines();
+        StartCoroutine(WaitToConvertToCancer());
+    }
+
+    public void CancerToBlood()
+    {
+        StopAllCoroutines();
+        StartCoroutine(WaitToConvertToBlood());
+    }
+
+    IEnumerator WaitToConvertToCancer()
+    {
+        converting = true;
+
+        GetComponent<CellNavMesh>().StopMoving();
+
+        yield return new WaitForSeconds(3);
+
         GetComponent<CellNavMesh>().enabled = false;
         GetComponent<CancerNavMesh>().enabled = true;
 
@@ -32,10 +51,15 @@ public class CellTypeManager : MonoBehaviour
 
         transform.Find("Blood").gameObject.SetActive(false);
         transform.Find("Cancer").gameObject.SetActive(true);
+        converting = false;
     }
 
-    public void CancerToBlood()
+    IEnumerator WaitToConvertToBlood()
     {
+        converting = true;
+
+        yield return new WaitForSeconds(1);
+
         GetComponent<CellNavMesh>().enabled = true;
         GetComponent<CancerNavMesh>().enabled = false;
 
@@ -44,5 +68,6 @@ public class CellTypeManager : MonoBehaviour
 
         transform.Find("Blood").gameObject.SetActive(true);
         transform.Find("Cancer").gameObject.SetActive(false);
+        converting = false;
     }
 }
