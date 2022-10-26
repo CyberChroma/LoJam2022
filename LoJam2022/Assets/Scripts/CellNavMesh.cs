@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class NavMesh_Cell : MonoBehaviour
+public class CellNavMesh : MonoBehaviour
 {
     [SerializeField] private GameObject[] endPoints;
     [SerializeField] private GameObject[] spawnPoints;
+
+    [SerializeField] private float lerpDuration = 3;
+    [SerializeField] private float startValue = 0;
+    [SerializeField] private float endValue = 10;
+    [SerializeField] private float valueToLerp;
 
     private bool targetAquired = false;
     private NavMeshAgent agent;
@@ -34,9 +39,24 @@ public class NavMesh_Cell : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        StartCoroutine(Lerp());
         Vector3 target = ChooseDestination(spawnPoints);
         transform.position = target;
         targetAquired = false;
     }
 
+    IEnumerator Lerp()
+    {
+        float timeElapsed = 0;
+        while (timeElapsed < lerpDuration)
+        {
+            valueToLerp = Mathf.Lerp(startValue, endValue, timeElapsed / lerpDuration);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        valueToLerp = endValue;
+    }
+
 }
+
+

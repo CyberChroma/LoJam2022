@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class NavMesh_Cancer : MonoBehaviour
+public class CancerNavMesh : MonoBehaviour
 {
     [SerializeField] private float wanderRadius;
     [SerializeField] private float radiusMin;
