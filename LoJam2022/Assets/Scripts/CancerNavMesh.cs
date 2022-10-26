@@ -35,7 +35,7 @@ public class CancerNavMesh : MonoBehaviour
         Vector3 randDirection = Random.insideUnitSphere * dist;
         randDirection += origin;
         NavMeshHit navHit;
-        UnityEngine.AI.NavMesh.SamplePosition(randDirection, out navHit, dist, layermask);
+        NavMesh.SamplePosition(randDirection, out navHit, dist, layermask);
 
         return navHit.position;
     }

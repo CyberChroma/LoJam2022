@@ -10,10 +10,12 @@ public class CellNavMesh : MonoBehaviour
 
     private bool targetAquired = false;
     private NavMeshAgent agent;
+    CellTypeManager blood;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        blood = GetComponent<CellTypeManager>();
     }
 
     private void Update()
@@ -34,9 +36,13 @@ public class CellNavMesh : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Vector3 target = ChooseDestination(spawnPoints);
-        transform.position = target;
-        targetAquired = false;
+        if (enabled)
+        {
+            Vector3 target = ChooseDestination(spawnPoints);
+            transform.position = target;
+            targetAquired = false;
+        }
+        
     }
 
 
