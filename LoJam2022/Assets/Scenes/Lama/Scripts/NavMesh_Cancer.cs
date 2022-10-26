@@ -1,19 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class NavMesh : MonoBehaviour
+public class NavMesh_Cancer : MonoBehaviour
 {
     [SerializeField] private float wanderRadius;
     [SerializeField] private float radiusMin;
     [SerializeField] private float wanderTimer;
 
-    private UnityEngine.AI.NavMeshAgent agent;
+    private NavMeshAgent agent;
     private float timer;
 
     void Start()
     {
-        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();
         timer = wanderTimer;
     }
 
@@ -31,9 +32,9 @@ public class NavMesh : MonoBehaviour
 
     public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
     {
-        Vector3 randDirection = Random.insideUnitSphere * (dist);
+        Vector3 randDirection = Random.insideUnitSphere * dist;
         randDirection += origin;
-        UnityEngine.AI.NavMeshHit navHit;
+        NavMeshHit navHit;
         UnityEngine.AI.NavMesh.SamplePosition(randDirection, out navHit, dist, layermask);
 
         return navHit.position;
