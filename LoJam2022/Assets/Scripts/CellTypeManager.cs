@@ -13,14 +13,13 @@ public class CellTypeManager : MonoBehaviour
     public BloodType bloodType;
     public bool converting = false;
 
+
     void Start()
     {
-
     }
 
     void Update()
     {
-        
     }
 
     public void BloodToCancer()
