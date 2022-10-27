@@ -38,9 +38,12 @@ public class WhiteBloodCell : MonoBehaviour
         throwing = false;
     }
 
-    private void OnTriggerEnter(Collider other) {
-        if (!other.CompareTag("Player")) {
+    private void OnCollisionEnter(Collision collision) {
+        if (!collision.collider.CompareTag("Player")) {
             throwing = false;
+        }
+        if (collision.collider.CompareTag("Cancerous")) {
+            collision.collider.GetComponent<CellTypeManager>().CancerToBlood();
         }
     }
 }
