@@ -13,13 +13,18 @@ public class CellTypeManager : MonoBehaviour
     public BloodType bloodType;
     public bool converting = false;
 
+    private float randRotationX = 0;
+    private float randRotationY = 0;
 
     void Start()
     {
+        randRotationX = Random.Range(-90f, 90f);
+        randRotationY = Random.Range(-90f, 90f);
     }
 
     void Update()
     {
+        
     }
 
     public void BloodToCancer()
