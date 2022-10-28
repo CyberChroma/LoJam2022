@@ -45,7 +45,7 @@ public class CellNavMesh : MonoBehaviour
             Vector3 target = ChooseDestination(spawnPoints);
             transform.position = target;
             targetAquired = false;
-            //rb.velocity = new Vector3(0f, );    
+            rb.velocity = Vector3.zero;    
             
         }
     }
