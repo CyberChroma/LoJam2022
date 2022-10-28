@@ -12,7 +12,42 @@ ModelImporter:
   - first:
       74: -6185155371445809522
     second: Throw
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ColouredMetal
+    second: {fileID: 2100000, guid: 4ed28f91cdb14f7468f62584dc454c68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Helmet
+    second: {fileID: 2100000, guid: 53ac0d1984c06b14692116c937d9a249, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HelmetStripe
+    second: {fileID: 2100000, guid: 3deed38d1aeb0514f955d06d09fa678e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Human
+    second: {fileID: 2100000, guid: 30226676434907c4b8fe4f1b3249308b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SuitLines
+    second: {fileID: 2100000, guid: 4ed28f91cdb14f7468f62584dc454c68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SuitPrimary
+    second: {fileID: 2100000, guid: 30226676434907c4b8fe4f1b3249308b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SuitSecondary
+    second: {fileID: 2100000, guid: 3deed38d1aeb0514f955d06d09fa678e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

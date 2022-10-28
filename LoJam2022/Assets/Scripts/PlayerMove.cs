@@ -20,6 +20,10 @@ public class PlayerMove : MonoBehaviour {
         anim = GetComponentInChildren<Animator>();
     }
 
+    private void OnDisable() {
+        anim.SetBool("Moving", false);
+    }
+
     // Update is called once per frame
     void Update() {
         bool moving = false;
