@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public enum BloodType
@@ -15,16 +14,27 @@ public class CellTypeManager : MonoBehaviour
 
     private float randRotationX = 0;
     private float randRotationY = 0;
+    private float randRotationZ = 0;
 
     void Start()
     {
-        randRotationX = Random.Range(-90f, 90f);
-        randRotationY = Random.Range(-90f, 90f);
+        randRotationX = Random.Range(0f, 180f);
+        randRotationY = Random.Range(0f, 180f);
+        randRotationZ = Random.Range(0f, 180f);
     }
 
     void Update()
     {
-        
+        float xValue = (float)(0.5 * Mathf.Sin(randRotationX) + 0.5);
+        float yValue = (float)(0.5 * Mathf.Cos(randRotationY) + 0.5);
+        float zValue = (float)(0.5 * Mathf.Cos(randRotationZ) + 0.5);
+        if (bloodType == BloodType.BloodCell)
+        {
+            transform.Find("Blood").gameObject.transform.Rotate(new Vector3(xValue, yValue, zValue));
+        } else
+        {
+            transform.Find("Cancer").gameObject.transform.Rotate(new Vector3(xValue, yValue, zValue));
+        }
     }
 
     public void BloodToCancer()
