@@ -9,10 +9,12 @@ public class CellNavMesh : MonoBehaviour
     private bool targetAquired = false;
     private NavMeshAgent agent;
     private bool converting = false;
+    private Rigidbody rb;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        rb = GetComponent<Rigidbody>();
     }
 
     private void OnEnable()
@@ -43,6 +45,8 @@ public class CellNavMesh : MonoBehaviour
             Vector3 target = ChooseDestination(spawnPoints);
             transform.position = target;
             targetAquired = false;
+            //rb.velocity = new Vector3(0f, );    
+            
         }
     }
 
