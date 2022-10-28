@@ -18,6 +18,8 @@ public class CellTypeManager : MonoBehaviour
 
     void Start()
     {
+        transform.Find("Blood").rotation = Random.rotation;
+        transform.Find("Cancer").rotation = Random.rotation;
         randRotationX = Random.Range(0f, 180f);
         randRotationY = Random.Range(0f, 180f);
         randRotationZ = Random.Range(0f, 180f);
@@ -30,10 +32,10 @@ public class CellTypeManager : MonoBehaviour
         float zValue = (float)(0.5 * Mathf.Cos(randRotationZ) + 0.5);
         if (bloodType == BloodType.BloodCell)
         {
-            transform.Find("Blood").gameObject.transform.Rotate(new Vector3(xValue, yValue, zValue));
+            transform.Find("Blood").Rotate(new Vector3(xValue, yValue, zValue));
         } else
         {
-            transform.Find("Cancer").gameObject.transform.Rotate(new Vector3(xValue, yValue, zValue));
+            transform.Find("Cancer").Rotate(new Vector3(xValue, yValue, zValue));
         }
     }
 

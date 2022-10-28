@@ -12,15 +12,29 @@ public class WhiteBloodCell : MonoBehaviour
     private Collider thisCollider;
     private Collider playerCollider;
 
+    private float randRotationX = 0;
+    private float randRotationY = 0;
+    private float randRotationZ = 0;
+
     public void Throw(Collider player) {
         rb = GetComponent<Rigidbody>();
         thisCollider = GetComponent<Collider>();
+        randRotationX = Random.Range(0f, 180f);
+        randRotationY = Random.Range(0f, 180f);
+        randRotationZ = Random.Range(0f, 180f);
         playerCollider = player;
         Physics.IgnoreCollision(thisCollider, playerCollider, true);
         throwing = true;
         rb.velocity = player.GetComponent<Rigidbody>().velocity;
         rb.AddForce(transform.forward * speed, ForceMode.Impulse);
         StartCoroutine(WaitToStopThrow());
+    }
+
+    void Update() {
+        float xValue = (float)(0.5 * Mathf.Sin(randRotationX) + 0.5);
+        float yValue = (float)(0.5 * Mathf.Cos(randRotationY) + 0.5);
+        float zValue = (float)(0.5 * Mathf.Cos(randRotationZ) + 0.5);
+        transform.Find("WhiteBloodCellModel").gameObject.transform.Rotate(new Vector3(xValue, yValue, zValue));
     }
 
     private void FixedUpdate() {
@@ -43,6 +57,7 @@ public class WhiteBloodCell : MonoBehaviour
             throwing = false;
         }
         if (collision.collider.CompareTag("Cancerous")) {
+            rb.velocity = Vector3.zero;
             collision.collider.GetComponent<CellTypeManager>().CancerToBlood();
         }
     }

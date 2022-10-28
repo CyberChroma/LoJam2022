@@ -84,8 +84,8 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _ColourCellDensity: 0.08
-    - _ColourNoiseMultiplier: 1.93
+    - _ColourCellDensity: 0.35
+    - _ColourNoiseMultiplier: 0.86
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
@@ -96,14 +96,14 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Metallic: 0
+    - _Metallic: 0.1
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.4
+    - _Smoothness: 0.2
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -118,12 +118,12 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 0, b: 0, a: 1}
-    - _Emission: {r: 0, g: 0.027728232, b: 0.18039216, a: 1}
+    - _Emission: {r: 0.13207549, g: 0.0025897156, b: 0, a: 1}
     - _EmissionColor: {r: 0.23584908, g: 0, b: 0, a: 1}
     - _Primary: {r: 1, g: 0, b: 0.051414013, a: 1}
     - _PrimaryColour: {r: 1, g: 0, b: 0, a: 1}
     - _Secondary: {r: 0.6415094, g: 0, b: 0, a: 1}
-    - _SecondaryColour: {r: 0.6431373, g: 0, b: 0, a: 1}
+    - _SecondaryColour: {r: 0.5377358, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &8277840913665387184
