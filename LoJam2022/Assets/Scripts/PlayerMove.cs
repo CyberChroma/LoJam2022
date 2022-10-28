@@ -12,28 +12,41 @@ public class PlayerMove : MonoBehaviour {
     private float horizontal = 0;
     private bool canDash = true;
     private Rigidbody rb;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start() {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
     void Update() {
+        bool moving = false;
         if (Input.GetKey(KeyCode.W)) {
+            moving = true;
             forward = Mathf.Lerp(forward, 1, inputSmoothing * Time.deltaTime);
         } else if (Input.GetKey(KeyCode.S)) {
+            moving = true;
             forward = Mathf.Lerp(forward, -1, inputSmoothing * Time.deltaTime);
         } else {
             forward = Mathf.Lerp(forward, 0, inputSmoothing * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.D)) {
+            moving = true;
             horizontal = Mathf.Lerp(horizontal, 1, inputSmoothing * Time.deltaTime);
         } else if (Input.GetKey(KeyCode.A)) {
+            moving = true;
             horizontal = Mathf.Lerp(horizontal, -1, inputSmoothing * Time.deltaTime);
         } else {
             horizontal = Mathf.Lerp(horizontal, 0, inputSmoothing * Time.deltaTime);
+        }
+
+        if (moving) {
+            anim.SetBool("Moving", true);
+        } else {
+            anim.SetBool("Moving", false);
         }
 
         Vector3 moveVector = cam.forward * forward + cam.right * horizontal;

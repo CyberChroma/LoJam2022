@@ -9,10 +9,16 @@ public class PlayerThrow : MonoBehaviour {
     public GameObject whiteBloodCell;
     public Transform whiteCellParent;
     public Transform shootPoint;
+    private Animator anim;
+
+    void Start() {
+        anim = GetComponentInChildren<Animator>();
+    }
 
     // Update is called once per frame
     void Update() {
         if (canThrow && Input.GetKeyDown(KeyCode.LeftShift)) {
+            anim.SetTrigger("Throw");
             GameObject newCell = Instantiate(whiteBloodCell, shootPoint.position, shootPoint.rotation, whiteCellParent);
             newCell.GetComponent<WhiteBloodCell>().Throw(GetComponent<Collider>());
             StartCoroutine(WaitToThrow());
