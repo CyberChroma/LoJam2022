@@ -96,5 +96,6 @@ public class CellTypeManager : MonoBehaviour
         transform.Find("Blood").gameObject.SetActive(true);
         transform.Find("Cancer").gameObject.SetActive(false);
         converting = false;
+        gameObject.GetComponent<CellNavMesh>().targetAquired = false;
     }
 }

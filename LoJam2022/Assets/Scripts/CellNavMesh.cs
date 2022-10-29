@@ -6,7 +6,7 @@ public class CellNavMesh : MonoBehaviour
     [SerializeField] private GameObject[] endPoints;
     [SerializeField] private GameObject[] spawnPoints;
 
-    private bool targetAquired = false;
+    public bool targetAquired = false;
     private NavMeshAgent agent;
     private bool converting = false;
     private Rigidbody rb;
@@ -24,6 +24,7 @@ public class CellNavMesh : MonoBehaviour
 
     private void Update()
     {
+        
         if (!targetAquired)
         {
             Vector3 target = ChooseDestination(endPoints);

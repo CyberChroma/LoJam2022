@@ -453,6 +453,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 628727228}
     m_Modifications:
     - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: spawnPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: endPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1664149087}
@@ -471,6 +479,10 @@ PrefabInstance:
     - target: {fileID: 2738165980911885714, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: m_Name
       value: Cell (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885714, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2738165980911885716, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: m_RootOrder
@@ -530,6 +542,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 628727228}
     m_Modifications:
     - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: endPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -556,6 +572,10 @@ PrefabInstance:
     - target: {fileID: 2738165980911885714, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: m_Name
       value: Cell (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885714, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2738165980911885716, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: m_RootOrder
@@ -768,6 +788,10 @@ PrefabInstance:
     - target: {fileID: 7244261409405544940, guid: 8a6aade5e8d976d4ea5c9caf4abd0208, type: 3}
       propertyPath: m_Name
       value: Cancerous (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7244261409405544942, guid: 8a6aade5e8d976d4ea5c9caf4abd0208, type: 3}
+      propertyPath: spawnPoints.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7244261409405544942, guid: 8a6aade5e8d976d4ea5c9caf4abd0208, type: 3}
       propertyPath: endPoints.Array.data[0]
@@ -1116,6 +1140,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 628727228}
     m_Modifications:
     - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: spawnPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: endPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1664149087}
@@ -1134,6 +1166,10 @@ PrefabInstance:
     - target: {fileID: 2738165980911885714, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: m_Name
       value: Cell (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885714, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2738165980911885716, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: m_RootOrder
@@ -1506,6 +1542,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 628727228}
     m_Modifications:
     - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: spawnPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: endPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1664149087}
@@ -1524,6 +1568,10 @@ PrefabInstance:
     - target: {fileID: 2738165980911885714, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: m_Name
       value: Cell (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885714, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2738165980911885716, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: m_RootOrder
@@ -1637,6 +1685,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 628727228}
     m_Modifications:
     - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: spawnPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: endPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1664149087}
@@ -1655,6 +1711,10 @@ PrefabInstance:
     - target: {fileID: 2738165980911885714, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: m_Name
       value: Cell (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885714, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2738165980911885716, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: m_RootOrder
@@ -1935,6 +1995,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 628727228}
     m_Modifications:
     - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: spawnPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885712, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: endPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1664149087}
@@ -1953,6 +2021,10 @@ PrefabInstance:
     - target: {fileID: 2738165980911885714, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: m_Name
       value: Cell
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738165980911885714, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2738165980911885716, guid: 38248dddac877d4448c99061d2e77c11, type: 3}
       propertyPath: m_RootOrder
@@ -2119,7 +2191,7 @@ GameObject:
   - component: {fileID: 1664149089}
   m_Layer: 0
   m_Name: EndPoint
-  m_TagString: Untagged
+  m_TagString: Destination
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2363,6 +2435,10 @@ PrefabInstance:
       value: Cancerous
       objectReference: {fileID: 0}
     - target: {fileID: 7244261409405544942, guid: 8a6aade5e8d976d4ea5c9caf4abd0208, type: 3}
+      propertyPath: spawnPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7244261409405544942, guid: 8a6aade5e8d976d4ea5c9caf4abd0208, type: 3}
       propertyPath: endPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1664149087}
@@ -2556,7 +2632,7 @@ GameObject:
   - component: {fileID: 2144175792}
   m_Layer: 0
   m_Name: EndPoint (1)
-  m_TagString: Untagged
+  m_TagString: Destination
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
