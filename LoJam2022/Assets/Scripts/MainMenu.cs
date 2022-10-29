@@ -14,12 +14,12 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Brandon");
+        SceneManager.LoadScene("Level");
     }
 
     public void Return()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void ExitGame()
