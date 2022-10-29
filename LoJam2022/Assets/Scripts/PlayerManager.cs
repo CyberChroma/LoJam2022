@@ -24,7 +24,9 @@ public class PlayerManager : MonoBehaviour
         {
             SwitchEnables(PlayersQueue.Peek(), false);
             profileUI.Change();
-            ammoUI.GetComponent<AmmoDisplay>().Change();
+            if (ammoUI) {
+                ammoUI.GetComponent<AmmoDisplay>().Change();
+            }
             GameObject popped = PlayersQueue.Dequeue();
             PlayersQueue.Enqueue(popped);
             SwitchEnables(PlayersQueue.Peek(), true);
@@ -35,7 +37,7 @@ public class PlayerManager : MonoBehaviour
     {
         player.GetComponent<PlayerMove>().enabled = boolean;
         player.GetComponent<PlayerThrow>().enabled = boolean;
-        player.GetComponent<Rigidbody>().detectCollisions = boolean;
+        //player.GetComponent<Rigidbody>().detectCollisions = boolean;
         player.transform.Find("CameraPivot").GetComponent<PlayerCamera>().enabled = boolean;
         player.transform.Find("CameraPivot").Find("Main Camera").gameObject.SetActive(boolean);
     }
