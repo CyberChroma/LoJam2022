@@ -1,5 +1,7 @@
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class CellManager : MonoBehaviour
 {
@@ -7,6 +9,7 @@ public class CellManager : MonoBehaviour
     [SerializeField] public int NumOfCancer = 1;
 
     [SerializeField] private Slider slider;
+    [SerializeField] private GameObject warning;
 
     private void Start()
     {
@@ -16,6 +19,11 @@ public class CellManager : MonoBehaviour
     private void Update()
     {
         SetHealth(NumOfBlood);
+
+        if (GetLoseCondition())
+        {
+            StartCoroutine(WaitForGameOver());
+        }
     }
 
     public void SetHealth(int cellsLeft)
@@ -33,5 +41,12 @@ public class CellManager : MonoBehaviour
         {
             return false;
         }
+    }
+
+    IEnumerator WaitForGameOver()
+    {
+        warning.SetActive(true);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("GameOver");
     }
 }
