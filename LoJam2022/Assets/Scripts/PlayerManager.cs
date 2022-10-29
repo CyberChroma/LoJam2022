@@ -4,8 +4,9 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     public ProfileUI profileUI;
+    [SerializeField] private AmmoDisplay ammoUI;
     [SerializeField] public GameObject[] PlayersArray;
-    [SerializeField] private Queue<GameObject> PlayersQueue = new Queue<GameObject>();
+    private Queue<GameObject> PlayersQueue = new Queue<GameObject>();
 
     void Start()
     {
@@ -23,6 +24,7 @@ public class PlayerManager : MonoBehaviour
         {
             SwitchEnables(PlayersQueue.Peek(), false);
             profileUI.Change();
+            ammoUI.GetComponent<AmmoDisplay>().Change();
             GameObject popped = PlayersQueue.Dequeue();
             PlayersQueue.Enqueue(popped);
             SwitchEnables(PlayersQueue.Peek(), true);
