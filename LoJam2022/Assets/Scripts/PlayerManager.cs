@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     public ProfileUI profileUI;
-    [SerializeField] private GameObject[] PlayersArray;
+    [SerializeField] public GameObject[] PlayersArray;
     [SerializeField] private Queue<GameObject> PlayersQueue = new Queue<GameObject>();
 
     void Start()
