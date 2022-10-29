@@ -16,8 +16,12 @@ public class CellTypeManager : MonoBehaviour
     private float randRotationY = 0;
     private float randRotationZ = 0;
 
+    [SerializeField] private CellManager cellManager;
+
     void Start()
     {
+        cellManager.GetComponent<CellManager>();
+
         transform.Find("Blood").rotation = Random.rotation;
         transform.Find("Cancer").rotation = Random.rotation;
         randRotationX = Random.Range(0f, 180f);
@@ -43,6 +47,7 @@ public class CellTypeManager : MonoBehaviour
     {
         StopAllCoroutines();
         StartCoroutine(WaitToConvertToCancer());
+        
     }
 
     public void CancerToBlood()
@@ -62,6 +67,9 @@ public class CellTypeManager : MonoBehaviour
         GetComponent<CellNavMesh>().enabled = false;
         GetComponent<CancerNavMesh>().enabled = true;
 
+        cellManager.NumOfBlood--;
+        cellManager.NumOfCancer++;
+
         tag = "Cancerous";
         bloodType = BloodType.CancerousCell;
 
@@ -78,6 +86,9 @@ public class CellTypeManager : MonoBehaviour
 
         GetComponent<CellNavMesh>().enabled = true;
         GetComponent<CancerNavMesh>().enabled = false;
+
+        cellManager.NumOfBlood++;
+        cellManager.NumOfCancer--;
 
         tag = "Blood Cell";
         bloodType = BloodType.BloodCell;

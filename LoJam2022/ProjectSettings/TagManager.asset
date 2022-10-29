@@ -7,6 +7,7 @@ TagManager:
   - Cancerous
   - Blood Cell
   - White Cell
+  - Destination
   layers:
   - Default
   - TransparentFX

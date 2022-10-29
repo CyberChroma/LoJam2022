@@ -40,7 +40,7 @@ public class CellNavMesh : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (enabled && !converting)
+        if (enabled && !converting && other.tag == "Destination")
         {
             Vector3 target = ChooseDestination(spawnPoints);
             transform.position = target;
