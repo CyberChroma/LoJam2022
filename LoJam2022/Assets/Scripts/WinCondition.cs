@@ -28,8 +28,6 @@ public class WinCondition : MonoBehaviour
         if (other.tag == "Player")
         {
             numOfPlayers++;
-            Debug.Log("TESTING!!!Enter");
-            Debug.Log(numOfPlayers);
         }
     }
 
@@ -38,7 +36,6 @@ public class WinCondition : MonoBehaviour
         if (other.tag == "Player")
         {
             numOfPlayers--;
-            Debug.Log("TESTING!!!Exit");
         }
     }
 
