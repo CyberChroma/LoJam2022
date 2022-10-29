@@ -28,6 +28,8 @@ public class WhiteBloodCell : MonoBehaviour
     }
 
     void Start() {
+        rb = GetComponent<Rigidbody>();
+        thisCollider = GetComponent<Collider>();
         randRotationX = Random.Range(0f, 180f);
         randRotationY = Random.Range(0f, 180f);
         randRotationZ = Random.Range(0f, 180f);
@@ -62,7 +64,9 @@ public class WhiteBloodCell : MonoBehaviour
             throwing = false;
         }
         if (collision.collider.CompareTag("Cancerous")) {
-            rb.velocity = Vector3.zero;
+            if (rb) {
+                rb.velocity = Vector3.zero;
+            }
             collision.collider.GetComponent<CellTypeManager>().CancerToBlood();
         }
     }

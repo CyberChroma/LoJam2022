@@ -384,6 +384,7 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 0}
   - {fileID: 0}
+  targetAquired: 0
 --- !u!114 &2738165980911885722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,6 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodType: 0
   converting: 0
+  cellManager: {fileID: 0}
 --- !u!195 &2738165980911885713
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -8,11 +8,13 @@ public class CellNavMesh : MonoBehaviour
 
     public bool targetAquired = false;
     private NavMeshAgent agent;
+    private NavMeshPath path;
     private bool converting = false;
     private Rigidbody rb;
 
     void Start()
     {
+        path = new NavMeshPath();
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
     }
@@ -28,7 +30,9 @@ public class CellNavMesh : MonoBehaviour
         if (!targetAquired)
         {
             Vector3 target = ChooseDestination(endPoints);
-            agent.SetDestination(target);
+            agent.CalculatePath(target, path);
+            agent.SetPath(path);
+            //agent.SetDestination(target);
             targetAquired = true;
         }
     }

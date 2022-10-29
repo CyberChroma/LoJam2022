@@ -62,6 +62,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1622595895314448190}
     m_Modifications:
+    - target: {fileID: 8433938601987508306, guid: c5850155988beee45b289c91c9028270, type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8433938601987508316, guid: c5850155988beee45b289c91c9028270, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -106,9 +110,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8433938601987508317, guid: c5850155988beee45b289c91c9028270, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8433938601987508319, guid: c5850155988beee45b289c91c9028270, type: 3}
       propertyPath: m_Name
       value: Bernard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433938602910523404, guid: c5850155988beee45b289c91c9028270, type: 3}
+      propertyPath: curAmmo
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5850155988beee45b289c91c9028270, type: 3}
@@ -145,6 +157,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: 411778ee3a164a24ca3b08fbcc972087, type: 2}
+    - target: {fileID: 8433938601987508306, guid: c5850155988beee45b289c91c9028270, type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8433938601987508316, guid: c5850155988beee45b289c91c9028270, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -189,9 +205,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8433938601987508317, guid: c5850155988beee45b289c91c9028270, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8433938601987508319, guid: c5850155988beee45b289c91c9028270, type: 3}
       propertyPath: m_Name
       value: Merida
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433938602910523404, guid: c5850155988beee45b289c91c9028270, type: 3}
+      propertyPath: curAmmo
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8433938602910523404, guid: c5850155988beee45b289c91c9028270, type: 3}
       propertyPath: whiteCellParent
@@ -232,6 +256,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: 1b3bc00066af98849a08f4bd686f65a7, type: 2}
+    - target: {fileID: 8433938601987508306, guid: c5850155988beee45b289c91c9028270, type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8433938601987508316, guid: c5850155988beee45b289c91c9028270, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -276,9 +304,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8433938601987508317, guid: c5850155988beee45b289c91c9028270, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8433938601987508319, guid: c5850155988beee45b289c91c9028270, type: 3}
       propertyPath: m_Name
       value: Brandon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433938602910523404, guid: c5850155988beee45b289c91c9028270, type: 3}
+      propertyPath: curAmmo
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8433938602910523404, guid: c5850155988beee45b289c91c9028270, type: 3}
       propertyPath: whiteCellParent
@@ -319,6 +355,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: 601e73d9dcb6c3d4fb5e298df3a23928, type: 2}
+    - target: {fileID: 8433938601987508306, guid: c5850155988beee45b289c91c9028270, type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8433938601987508316, guid: c5850155988beee45b289c91c9028270, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -363,9 +403,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8433938601987508317, guid: c5850155988beee45b289c91c9028270, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8433938601987508319, guid: c5850155988beee45b289c91c9028270, type: 3}
       propertyPath: m_Name
       value: Lama
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433938602910523404, guid: c5850155988beee45b289c91c9028270, type: 3}
+      propertyPath: curAmmo
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8433938602910523404, guid: c5850155988beee45b289c91c9028270, type: 3}
       propertyPath: whiteCellParent

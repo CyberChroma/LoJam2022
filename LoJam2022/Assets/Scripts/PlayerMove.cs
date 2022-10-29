@@ -21,7 +21,9 @@ public class PlayerMove : MonoBehaviour {
     }
 
     private void OnDisable() {
-        anim.SetBool("Moving", false);
+        if (anim) {
+            anim.SetBool("Moving", false);
+        }
     }
 
     // Update is called once per frame
