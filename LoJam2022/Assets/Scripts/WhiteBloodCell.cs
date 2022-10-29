@@ -19,15 +19,18 @@ public class WhiteBloodCell : MonoBehaviour
     public void Throw(Collider player) {
         rb = GetComponent<Rigidbody>();
         thisCollider = GetComponent<Collider>();
-        randRotationX = Random.Range(0f, 180f);
-        randRotationY = Random.Range(0f, 180f);
-        randRotationZ = Random.Range(0f, 180f);
         playerCollider = player;
         Physics.IgnoreCollision(thisCollider, playerCollider, true);
         throwing = true;
         rb.velocity = player.GetComponent<Rigidbody>().velocity;
         rb.AddForce(transform.forward * speed, ForceMode.Impulse);
         StartCoroutine(WaitToStopThrow());
+    }
+
+    void Start() {
+        randRotationX = Random.Range(0f, 180f);
+        randRotationY = Random.Range(0f, 180f);
+        randRotationZ = Random.Range(0f, 180f);
     }
 
     void Update() {
@@ -42,7 +45,9 @@ public class WhiteBloodCell : MonoBehaviour
         if (gravity < 0) {
             gravity = 0;
         } else {
-            rb.AddForce(Vector3.down * gravity);
+            if (rb) {
+                rb.AddForce(Vector3.down * gravity);
+            }
         }
     }
 
