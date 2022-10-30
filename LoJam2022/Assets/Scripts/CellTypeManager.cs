@@ -82,7 +82,7 @@ public class CellTypeManager : MonoBehaviour
     {
         converting = true;
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.1f);
 
         GetComponent<CellNavMesh>().enabled = true;
         GetComponent<CancerNavMesh>().enabled = false;
